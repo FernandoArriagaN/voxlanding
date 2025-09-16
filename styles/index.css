@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+
+  
+
+    background: linear-gradient( 20deg,
+      #2a0f4c 0%,
+      #1b1b2f   25%,
+      #0d1b2a 50%,
+      #3c3c54 75%,
+      #2a0f4c 100%);
+    background-size: 300% 100%; 
+    animation: slide 10s ease-in-out infinite;
+  
+}
+
+
+  @keyframes slide {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.title {
+    font-family: oxanium;
+    font-size: 8vw;
+}
+
+.titleContainer p {
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.5vw;
+    width: 32vw;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.voxLogo {
+    width: 10vw;
+    align-self: center;
+
+}
+
+
+
+
+
+
+.principalContainer {
+    padding: 5vw;
+     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 76%, rgba(0,0,0,0) 100%);
+    background: url(/img/your\ nova.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+
+}
+
+.bannerContainer {
+    width: 50%;
+}
+.bannerContainer p {
+     text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+     background: linear-gradient( to top, #0143869c, #0000001a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    text-align: left;
+    line-height: 8vw;
+}
+
+
+ .formSection {
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    
+
+ }
+
+ .formContainer {
+    width: 50%;
+    display: flex;
+ }
+
+
+ .formSection button {
+    width: 13vw;
+    margin-top: 3vw;
+    display: inline-block;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #0059ffdc, #5a4500);
+    color: #111111;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+    border: none;
+    backdrop-filter: blur(10px);
+    pointer-events: all;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.discountText {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+     background: linear-gradient( 12deg, #F9FAFB, #070025d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+
+}
+
+.formSection input {
+    width: 19vw;
+    height: 2.5vw;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(11.3px);
+    border: 1px solid rgba(179, 179, 179, 0.493);
+    margin: 1vw;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    font-weight: bolder;
+    font-family: 'Oxanium', sans-serif;
+}
+.formSection label {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    font-weight: bolder;
+    color: #4c4cff;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.formSection button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #5a4500, #5600e0);
+    color: #F9FAFB;
+}
+
+.formSection button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.formSection button:hover::before {
+    left: 100%;
+}
