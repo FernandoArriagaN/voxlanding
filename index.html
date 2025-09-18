@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra audífonos Nova de alta calidad. Sonido premium, estilo moderno y descuentos exclusivos en nuestra tienda."> 
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content=" headphone, inear, tienda, audio, calidad, precio, dj"> 
+  
+    <meta property="og:title" content="Vox Nova - Landing page">
+    <meta property="og:description" content="Compra audífonos de alta calidad">
+    <meta property="og:image" content="/img/voxLogo.svg" > 
+
+
     <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,30 +19,30 @@
     <title>Vöx</title>
 </head>
 <body>
+    <main>
+        <section class="titleContainer">
+            <img class="voxLogo" src="img/voxLogo.svg" alt="Logotipo de Vox Nova"/>
+            <h1 class="title">Nova</h1>
+            <h2>Experience the perfect balance of premium sound and modern style</h2>
+        </section>
 
-    <article class="titleContainer">
-        <img class="voxLogo" src="img/voxLogo.svg"/>
-        <h1 class="title">Nova</h1>
-        <p>Experience the perfect balance of premium sound and modern style</p>
-    </article>
-
-    <section class="principalContainer">
-        <article class="formContainer">
-            <form class="formSection">
-                <p class="discountText"> Subscribe and get a <br>10% discount</p>
-                <label class="label">name</label>
-                <input  placeholder="name">
-                <label class="label">Email</label>
-                <input  placeholder="email">
-                <button class="buttonSusbcribe">Suscribe</button>
-            </form>
-        </article>
-        <article class="bannerContainer"> 
-            <p>Your vibe 
-                <br>Your style
-                <br>Your Nova</p>
-        </article>
-    </section>
-    
+        <section class="principalContainer">
+            <article class="formContainer">
+                <form class="formSection">
+                    <p class="discountText"> Subscribe and get a <br>10% discount</p>
+                    <label for="name" class="label">name</label>
+                    <input id="name" type="text" name="name"  placeholder="name">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="email" name="email"  placeholder="email">
+                    <button class="buttonSusbcribe">Suscribe</button>
+                </form>
+            </article>
+            <aside class="bannerContainer"> 
+                <p>Your vibe 
+                    <br>Your style
+                    <br>Your Nova</p>
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
